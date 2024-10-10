@@ -1,0 +1,31 @@
+---
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Usuarios from '../components/Usuarios.vue';
+---
+<main>
+
+	<div class="container">
+
+		<h2>Inicio</h2>
+		<p class="text-muted">Apartado de inicio.</p>
+		<hr>
+		
+		<div class="card">	
+
+			<div class="card-header p-4">
+
+				<h4>Renderizado dinámico</h4>
+				<p class="text-muted">Este elemento tiene asignado <b>cliente:load</b>, por lo que
+				obtenemos los datos de forma dinámica al renderizar el componente.</p>
+
+			</div>
+			<Usuarios client:load/>
+
+		</div>
+
+	</div>
+
+</main>
+<script>
+	import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+</script>
